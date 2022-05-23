@@ -1,0 +1,4 @@
+.hero{
+    background: url("/img/background.png");
+    background-color: var(--second-color);
+}
