@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@import url('http://fonts.cdnfonts.com/css/futura-pt');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root{
     --main-color:#6699CC;
@@ -15,7 +15,7 @@
 }
 
 *{
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'Cairo', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -68,6 +68,11 @@ a{
 }
 
 /* media queries  */
+@media (min-width: 1200px){
+    .container {
+        width: 1300px;
+    }
+}
 
 @media (max-width:991px){
 

@@ -1,4 +1,136 @@
-.hero{
+*{
+    direction: rtl;
+}
+.main-section{
     background: url("/img/background.png");
     background-color: var(--second-color);
+    background-size: cover;
+}
+/* header */
+.main-section header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+ .main-section header .header-logo img{
+     width: 75px;
+}
+.main-section header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.main-section header li{
+    margin: 0 10px;
+    font-size: 24px;
+}
+.main-section header li a{
+    color: var(--white);
+}
+/* hero */
+.main-section .hero{
+    margin: 40px 0 0 0;
+}
+.main-section .hero-text-content h2{
+    margin-top: 50px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--main-color);
+}
+.main-section .hero-text-content h4{
+    color: var(--white);
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.main-section .hero-text-content p{
+    margin-top: 20px;
+    color: #C5C5C5;
+    font-size: 17px;
+    font-weight: 700;
+}
+.main-section .hero-image-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-section .hero-image-content img{
+    width: 390px;
+    box-shadow: 5px 1px 25px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+.main-section .hero-image-content::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(137.47deg, #6699CC 16%, #4A4A4A 139.83%);
+    bottom: 80px;
+    left: -175px;
+    border-radius: 8px;
+    z-index: 0;
+}
+/* vision */
+.vision{
+    padding: 150px 0;
+}
+.main-section .vision .vision-image-content img{
+    width: 400px;
+    box-shadow: 5px 1px 25px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+.main-section .vision .vision-image-content{
+    z-index: 1;
+}
+.main-section .vision .vision-image-content::before{
+    content: "رسالتنا";
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 120px;
+    background: var(--main-color);
+    box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.08);
+    bottom: 210px;
+    left: 35px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: flex-end;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+.main-section .vision .vision-image-content::after{
+    content: "رؤيتنا";
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    background: var(--main-color);
+    box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.08);
+    bottom: 230px;
+    left: -8px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: flex-end;
+    transform: rotate(90deg);
+    z-index: -2;
+}
+.main-section .vision .vision-text-content h3{
+    color: var(--main-color);
+    font-size: 22px;
+}
+.main-section .vision .vision-text-content p{
+    color: var(--white);
+    font-size: 16px;
+    width: 80%;
+    margin-top: 15px;
 }
