@@ -13,32 +13,48 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+
+
+        Route::get('/', function () {
+            return view('welcome');
+        });
+
+        Route::get('/index', function () {
+            return view('index');
+        });
+
+
+        Route::get('/food-products', function () {
+            return view('foods');
+        });
+
+        Route::get('/cookbooks', function () {
+            return view('cookbooks');
+        });
+
+        Route::get('/products-listing', function () {
+            return view('products-listing');
+        });
+
+        Route::get('/about-us', function () {
+            return view('about');
+        });
+
+        Route::get('/contact-us', function () {
+            return view('contact');
+        });
+
+
+    });
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
-
-Route::get('/index', function () {
-    return view('index');
-});
-
-
-Route::get('/food-products', function () {
-    return view('foods');
-});
-
-Route::get('/cookbooks', function () {
-    return view('cookbooks');
-});
-
-Route::get('/products-listing', function () {
-    return view('products-listing');
-});
-
-Route::get('/about-us', function () {
-    return view('about');
-});
-
-Route::get('/contact-us', function () {
-    return view('contact');
-});
-

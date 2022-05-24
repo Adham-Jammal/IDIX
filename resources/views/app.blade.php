@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/footer.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/ar-style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/'.LaravelLocalization::getCurrentLocale().'-style.css')}}">
 
 </head>
 <body>
