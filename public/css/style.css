@@ -9,7 +9,7 @@
     --black:#444;
     --white:#fff;
     --border:.1rem solid rgba(0,0,0,.1);
-    --border-radius : 5px;
+    --border-radius : 8px;
     --border-hover:.1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }

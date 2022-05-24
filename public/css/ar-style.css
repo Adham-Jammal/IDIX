@@ -8,13 +8,13 @@
 }
 /* header */
 .main-section header{
-    padding: 10px 0;
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 73%;
 }
  .main-section header .header-logo img{
-     width: 75px;
+     width: 90px;
 }
 .main-section header ul{
     list-style: none;
@@ -27,13 +27,15 @@
 }
 .main-section header li a{
     color: var(--white);
+    font-size: 18px;
+    padding: 0 10px;
 }
 /* hero */
 .main-section .hero{
     margin: 40px 0 0 0;
 }
 .main-section .hero-text-content h2{
-    margin-top: 50px;
+    margin-top: 75px;
     font-size: 44px;
     font-weight: 700;
     line-height: 1.4;
@@ -57,7 +59,7 @@
     align-items: center;
 }
 .main-section .hero-image-content img{
-    width: 390px;
+    width: 440px;
     box-shadow: 5px 1px 25px 7px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 1;
@@ -65,10 +67,10 @@
 .main-section .hero-image-content::before{
     content: "";
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 520px;
+    height: 555px;
     background: linear-gradient(137.47deg, #6699CC 16%, #4A4A4A 139.83%);
-    bottom: 80px;
+    bottom: 111px;
     left: -175px;
     border-radius: 8px;
     z-index: 0;
@@ -78,7 +80,7 @@
     padding: 150px 0;
 }
 .main-section .vision .vision-image-content img{
-    width: 400px;
+    width: 460px;
     box-shadow: 5px 1px 25px 7px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 1;
@@ -89,16 +91,16 @@
 .main-section .vision .vision-image-content::before{
     content: "رسالتنا";
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     display: flex;
     position: absolute;
-    width: 400px;
+    width: 450px;
     height: 120px;
     background: var(--main-color);
     box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.08);
-    bottom: 210px;
-    left: 35px;
+    bottom: 230px;
+    left: -70px;
     border-radius: 8px;
     justify-content: center;
     align-items: flex-end;
@@ -108,29 +110,224 @@
 .main-section .vision .vision-image-content::after{
     content: "رؤيتنا";
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
     display: flex;
     position: absolute;
-    width: 350px;
+    width: 390px;
     height: 80px;
     background: var(--main-color);
     box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.08);
-    bottom: 230px;
-    left: -8px;
+    bottom: 250px;
+    left: -135px;
     border-radius: 8px;
     justify-content: center;
     align-items: flex-end;
     transform: rotate(90deg);
     z-index: -2;
 }
+.main-section .vision .vision-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-section .vision .vision-text-content h3{
+    width: 80%;
     color: var(--main-color);
     font-size: 22px;
 }
 .main-section .vision .vision-text-content p{
+    width: 80%;
     color: var(--white);
     font-size: 16px;
     width: 80%;
     margin-top: 15px;
 }
+/* our-message */
+.our-message{
+    background-color: var(--main-color);
+    padding: 100px 0;
+}
+.our-message .message-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-message .message-text h2 ,.our-message .message-text p{
+    color: var(--white);
+}
+.our-message .message-text h2{
+    text-align: right;
+    font-size: 26px;
+}
+.our-message .message-text p{
+    font-size: 30px;
+    text-align: right;
+}
+.quotation-mark {
+    display: flex;
+}
+.quotation-mark img{
+    margin: 0 5px;
+    width: 50px;
+}
+.right-quotation-mark{
+    transform: translate(0px, 100px);
+}
+.left-quotation-mark{
+    transform: translate(0px, -100px) rotate(180deg);
+}
+/* our services */
+.our-services{
+    padding: 150px 0;
+    background: url("/img/background.png");
+    background-color: var(--second-color);
+    background-size: cover;
+}
+
+.services .tabs {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.services .tabs li {
+      margin: 4px;
+    padding: 1px 5px;
+    font-size: 18px;
+    background-color: #C5C5C5;
+    color: #626366;
+    border-right: 1px solid #626366;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: 0.2s;
+
+  }
+  .services .tabs li.active,
+  .services .tabs li:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+  }
+  .services h3{
+    color: var(--main-color);
+    font-size: 48px;
+    margin: 40px 0;  }
+  .services p{
+      width: 80%;
+      color: var(--white);
+      font-size: 20px;
+  }
+  .service-content > div {
+    position: relative;
+    padding: 20px;
+  }
+  .service-content > div:not(:first-child) {
+    display: none;
+  }
+  .service-content .service-text-content {
+      position:absolute;
+      bottom: -65px;
+      right: -115px;
+      background-color: var(--main-color);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      width: 300px;
+  }
+  .service-content .service-text-content h4{
+    font-size: 22px;
+    color: var(--second-color);
+  }
+.service-content .service-text-content ul{
+    list-style: none ;
+}
+.service-content .service-text-content li{
+    color: var(--white);
+    font-size: 16px;
+    margin-top: -10px;
+}
+.service-content .service-text-content li::before{
+    content: "-";
+    font-size: 24px;
+    color: #4A4A49;
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+}
+.service-content .service-image-content img{
+    width: 550px;
+    border-radius: var(--border-radius);
+
+}
+/* our goals */
+.our-goals{
+    background-color: var(--main-color);
+    padding: 100px 0;
+}
+.our-goals .goals h3{
+    color: var(--second-color);
+    font-size: 44px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+.our-goals .goals .goal{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.our-goals .goals .goal p{
+    color: var(--white);
+    font-size: 18px;
+    border-right: 4px solid var(--white);
+    width: 65%;
+    padding-right: 15px;
+}
+.our-goals .goals .goal span{
+    color: var(--white);
+    font-size: 20px;
+    margin-left: 10px;
+}
+.our-goals .goals-image-content img{
+    width: 450px;
+}
+/* end of goals section */
+/* success partners section */
+.success-partners{
+    padding: 150px 0;
+    background: url("/img/background.png");
+    background-color: var(--second-color);
+    background-size: cover;
+}
+.success-partners .container{
+    margin-left: 0;
+}
+.success-partners .success-partners-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.success-partners .success-partners-title h3{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 700;
+}
+.success-partners .partners-logos{
+    background: var(--white);
+    height: 550px;
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.success-partners .partners-logos > div{
+    display: flex;
+    flex-direction: column;
+}
+.success-partners .partners-logos .partners-logos-column img{
+    width: 150px;
+    margin: 5px 0;
+}
+
