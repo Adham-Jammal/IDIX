@@ -263,6 +263,7 @@
             <div class="col-md-6 success-partners-title">
                 <h3>شركاء النجاح</h3>
             </div>
+            <span class="partners-logos-design"></span>
             <div class="col-md-6 partners-logos">
                 <div class="partners-logos-column column-1">
                     <img src="{{asset('img/logo2.png')}}" alt="">
@@ -290,4 +291,96 @@
     </div>
 </section>
 {{-- end of Success Partners section --}}
+{{-- contact section --}}
+<section class="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 form-content">
+                <h3>لا زال لديك استفسارات؟</h3>
+                <p>املئ النموذج</p>
+                <form action="">
+                    <div class="input-field">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" name="full-name" id="full_name">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">البريد الالكتروني</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-field">
+                        <label for="phone-number">رقم الهاتف</label>
+                        <input type="number" name="phone-number" id="phone_number">
+                    </div>
+                    <div class="input-field">
+                        <label for="service">الخدمة</label>
+                        <select id="service" name="service">
+                            <option value="electricity-works">أعمال الكهرباء</option>
+                            <option value="plumbing-works">أعمال السباكة</option>
+                            <option value="paint-works">أعمال الطلاء</option>
+                            <option value="HVAC-maintenance">أعمال صيانة تكييف الهواء</option>
+                            <option value="pest-control">خدمات مكافحة الحشرات</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="message">الرسالة</label>
+                        <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" value="إرسال">
+                    </div>
+
+                  </form>
+            </div>
+            <div class="col-md-6 contact-image-content">
+                <img src="{{asset('img/contact.png')}}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+{{-- end of contact --}}
+{{-- contact info --}}
+<section class="contact-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 contact-info-text-content">
+                <h3>لنبقى على تواصل</h3>
+                <p class="contact-p">
+                    نحن منفتحون على أي اقتراحات
+                    أو لمجرد الدردشة
+                </p>
+                <span>مقرنا ومعلومات التواصل:</span>
+                <div class="info">
+                 <div class="emails-content">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="emails">
+                        <p>Email@email.com</p>
+                        <p>Email@email.com</p>
+                    </div>
+                 </div>
+
+                    <div class="location-content">
+                        <i class="fa fa-thumbtack" aria-hidden="true"></i>
+                        <div class="location">
+                            <p>المملكة العربية السعودية – حي المحمدية
+                                ص.ب 230409  الرياض 11321</p>
+                        </div>
+                    </div>
+                    <div class="phone-numbers-content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="phone-numbers">
+                            <p>+963 912345678</p>
+                            <p>+963 912345678</p>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-7 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4436.563288335262!2d-76.74920380408464!3d39.19409239099808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e1913f4b4fdb%3A0x18a1a674d9c0d7ad!2s7184%20Troy%20Hill%20Dr%2C%20Elkridge%2C%20MD%2021075%2C%20USA!5e0!3m2!1sen!2sro!4v1573996589257!5m2!1sen!2sro" frameborder="0" style="border:0; width:100%" allowfullscreen=""></iframe>
+              </div>
+            </div>
+        </div>
+</section>
+
 @stop
