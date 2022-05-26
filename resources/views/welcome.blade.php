@@ -270,11 +270,11 @@
 <section class="success-partners">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 success-partners-title">
+            <div class="col-12 col-lg-6 success-partners-title">
                 <h3>شركاء النجاح</h3>
             </div>
             <span class="partners-logos-design"></span>
-            <div class="col-md-6 partners-logos">
+            <div class="col-12 col-lg-6 partners-logos">
                 <div class="partners-logos-column column-1">
                     <img src="{{asset('img/logo2.png')}}" alt="">
                     <img src="{{asset('img/logo2.png')}}" alt="">
