@@ -28,9 +28,16 @@
                     شركة TDIX مقرها الرئيسي الرياض تأسست عام 2011 كشركة تابعة لمجموعة أوج المحدودة ، يعمل فريقها على الإبتكار للنهوض بمجال التعقيم ومكافحة الحشرات والصيانة والتشغيل في المملكـــــة العربيــــــــة السعوديـــــــــــــــــــــــــة وذلك
                     من خلال إهتمامـــــــــــــــــــــــــــه بأدق التفاصيـــــــــــــــــل في المشـــــــروع
                 </p>
+                <div class="circule-image">
+                    <img src="{{asset('img/circule-word.png')}}" alt="">
+                </div>
             </div>
 
-            <div class="col-md-6 hero-image-content">
+            <div class="col-md-6 hero-image-content owl-carousel owl-theme"  id="owl-carousel">
+                <img src="{{asset('img/hero-image.png')}}" alt="">
+                <img src="{{asset('img/hero-image.png')}}" alt="">
+                <img src="{{asset('img/hero-image.png')}}" alt="">
+                <img src="{{asset('img/hero-image.png')}}" alt="">
                 <img src="{{asset('img/hero-image.png')}}" alt="">
             </div>
         </div>

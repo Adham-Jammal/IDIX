@@ -1,5 +1,14 @@
+@font-face {
+    font-family: Arabic-font;
+    src: url("/fonts/DIN\ Next\ LT\ Arabic\ Bold.ttf");
+    src: url("../fonts/DIN\ Next\ LT\ Arabic\ Light.ttf");
+    src: url("../fonts/DIN\ Next\ LT\ Arabic\ Medium.ttf");
+    src: url("../fonts/DIN\ Next\ LT\ Arabic\ Regular.ttf");
+  }
 *{
     direction: rtl;
+    font-family: 'Arabic-font', sans-serif;
+
 }
 .main-section{
     background: url("/img/background.png");
@@ -53,16 +62,41 @@
     font-size: 17px;
     font-weight: 700;
 }
+.main-section .hero-text-content .circule-image{
+    position: absolute;
+    top: -50px;
+    left: -100px;
+}
+.main-section .hero-text-content .circule-image img{
+    width: 200px;
+}
+
 .main-section .hero-image-content{
+    direction: ltr;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 .main-section .hero-image-content img{
+    margin: 0 auto 0 10px;
+    direction: ltr;
     width: 440px;
     box-shadow: 5px 1px 25px 7px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 1;
+}
+.hero-next-slide{
+    position: absolute;
+    color: var(--main-color);
+    padding: 4px 20px 7px;
+    font-size: 24px;
+    font-weight: 600;
+    bottom: -20px;
+    border-radius: 5px;
+    right: 130px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
 }
 .main-section .hero-image-content::before{
     content: "";
@@ -92,11 +126,13 @@
     content: "رسالتنا";
     text-align: center;
     font-size: 30px;
+    line-height: 3;
     font-weight: 600;
     display: flex;
     position: absolute;
     width: 450px;
     height: 120px;
+    color: var(--second-color);
     background: var(--main-color);
     box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.08);
     bottom: 230px;
@@ -111,11 +147,13 @@
     content: "رؤيتنا";
     text-align: center;
     font-size: 26px;
+    line-height: 3;
     font-weight: 600;
     display: flex;
     position: absolute;
     width: 390px;
     height: 80px;
+    color: var(--second-color);
     background: var(--main-color);
     box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.08);
     bottom: 250px;
@@ -501,4 +539,21 @@ footer .second-footer .logo{
     display: flex;
     justify-content: flex-end;
 }
-
+#chat_with_us{
+    position: fixed;
+    bottom: 25px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    padding: 8px 12px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: var(--border-radius);
+    font-size: 2rem;
+    font-weight: 800;
+}
+#chat_with_us:hover{
+    background-color: var(--dark-color);
+}

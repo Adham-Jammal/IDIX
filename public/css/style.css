@@ -15,7 +15,6 @@
 }
 
 *{
-    font-family: 'Cairo', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -44,27 +43,11 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background:var(--main-color);
 }
-
+body{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
-}
-/*Scroll Top*/
-#scroll_top{
-    position: fixed;
-    right: -60px;
-    bottom: 25px;
-    padding: 8px 12px;
-    background-color: var(--main-color);
-    color: #fff;
-    cursor: pointer;
-    z-index: 4;
-    border-radius: var(--border-radius);
-    font-size: 2rem;
-    font-weight: 800;
-    transform: rotate(90deg);
-}
-#scroll_top:hover{
-    background-color: var(--dark-color);
 }
 
 /* media queries  */
@@ -94,7 +77,7 @@ a{
     body{
         padding-bottom: 6rem;
     }
-    #scroll_top{
+    #chat_with_us{
     bottom: 50px;
     }
 }
@@ -105,5 +88,3 @@ a{
     }
 
 }
-
-

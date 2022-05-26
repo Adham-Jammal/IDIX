@@ -9,6 +9,8 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- font awesome cdn link  -->
 
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
@@ -17,13 +19,15 @@
 
 </head>
 <body>
+    <button id="chat_with_us"><i class="fas fa-comment-alt"></i></button>
+
     @include('layouts.header')
 
     @yield('main')
 
     @include('layouts.footer')
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script src="{{ asset('js/main.js')}}"></script>
 </body>
 </html>
