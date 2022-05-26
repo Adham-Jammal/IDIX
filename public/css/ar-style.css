@@ -414,7 +414,7 @@
     background: #E8E8E8;
     border: 1px solid #6699CC;
     border-radius: 4px;
-    padding: 6px;
+    padding: 12px 6px;
 }
 .contact-us .form-content form input[type="submit"]{
     margin-top: 15px;

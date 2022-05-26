@@ -10,15 +10,15 @@
         </div>
         <div class="header-list">
             <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">اتصل بنا</a></li>
-                <li><a href="#">English</a></li>
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="contact_us">اتصل بنا</a></li>
+                <li><a href="/en">English</a></li>
             </ul>
         </div>
     </header>
     {{-- end of header --}}
     {{-- hero start --}}
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="row">
 
             <div class="col-md-6 hero-text-content">
@@ -299,7 +299,7 @@
 </section>
 {{-- end of Success Partners section --}}
 {{-- contact section --}}
-<section class="contact-us">
+<section class="contact-us" id="contact_us">
     <div class="container">
         <div class="row">
             <div class="col-md-6 form-content">
