@@ -11,7 +11,7 @@
         <div class="header-list">
             <ul>
                 <li><a href="#hero">الرئيسية</a></li>
-                <li><a href="contact_us">اتصل بنا</a></li>
+                <li><a href="#contact_us">اتصل بنا</a></li>
                 <li><a href="/en">English</a></li>
             </ul>
         </div>
