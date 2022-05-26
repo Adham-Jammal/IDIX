@@ -106,8 +106,11 @@
                         <li data-cont=".HVAC-maintenance">أعمال صيانة تكييف الهواء</li>
                         <li data-cont=".pest-control">خدمات مكافحة الحشرات</li>
                       </ul>
-                      <h3>خدماتنا</h3>
-                      <p>تتعدد خدماتنا وتتخذ عدة أنشطة نستلهم في تنفيذها أكثر الطرق تميزاً، تغطي إدارة الصيانة والتشغيل الخدمات التالية</p>
+                      <div>
+                        <h3>خدماتنا</h3>
+                        <p>تتعدد خدماتنا وتتخذ عدة أنشطة نستلهم في تنفيذها أكثر الطرق تميزاً، تغطي إدارة الصيانة والتشغيل الخدمات التالية</p>
+                    </div>
+
                 </div>
 
             </div>
@@ -198,7 +201,7 @@
 <section class="our-goals">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 goals">
+            <div class="col-12 col-lg-8 goals">
                 <div class="row">
                     <div class="col-md-6 goal">
                         <span class="goal-number">01</span>
@@ -256,7 +259,7 @@
                 <h3>#أهدافنا</h3>
 
             </div>
-            <div class="col-md-4 goals-image-content">
+            <div class="col-12 col-lg-4 goals-image-content">
                 <img src="{{asset('img/goals-image.png')}}" alt="">
             </div>
         </div>
@@ -302,7 +305,7 @@
 <section class="contact-us" id="contact_us">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 form-content">
+            <div class="col-12 col-lg-6 form-content">
                 <h3>لا زال لديك استفسارات؟</h3>
                 <p>املئ النموذج</p>
                 <form action="">
