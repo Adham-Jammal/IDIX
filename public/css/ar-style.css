@@ -32,11 +32,10 @@
 }
 .main-section header li{
     margin: 0 10px;
-    font-size: 24px;
 }
 .main-section header li a{
     color: var(--white);
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 0 10px;
 }
 /* hero */
@@ -45,7 +44,7 @@
 }
 .main-section .hero-text-content h2{
     margin-top: 75px;
-    font-size: 44px;
+    font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.4;
     color: var(--main-color);
@@ -54,12 +53,12 @@
     color: var(--white);
     margin-top: 15px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 .main-section .hero-text-content p{
     margin-top: 20px;
     color: #C5C5C5;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 .main-section .hero-text-content .circule-image{
@@ -89,7 +88,7 @@
     position: absolute;
     color: var(--main-color);
     padding: 4px 20px 7px;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     bottom: -20px;
     border-radius: 5px;
@@ -125,7 +124,7 @@
 .main-section .vision .vision-image-content::before{
     content: "رسالتنا";
     text-align: center;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 3;
     font-weight: 600;
     display: flex;
@@ -146,7 +145,7 @@
 .main-section .vision .vision-image-content::after{
     content: "رؤيتنا";
     text-align: center;
-    font-size: 26px;
+    font-size: 2.6rem;
     line-height: 3;
     font-weight: 600;
     display: flex;
@@ -172,12 +171,12 @@
 .main-section .vision .vision-text-content h3{
     width: 80%;
     color: var(--main-color);
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 .main-section .vision .vision-text-content p{
     width: 80%;
     color: var(--white);
-    font-size: 16px;
+    font-size: 1.6rem;
     width: 80%;
     margin-top: 15px;
 }
@@ -196,10 +195,10 @@
 }
 .our-message .message-text h2{
     text-align: right;
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 .our-message .message-text p{
-    font-size: 30px;
+    font-size: 3rem;
     text-align: right;
 }
 .quotation-mark {
@@ -234,7 +233,7 @@
 .services .tabs li {
       margin: 4px;
     padding: 1px 5px;
-    font-size: 18px;
+    font-size: 1.8rem;
     background-color: #C5C5C5;
     color: #626366;
     border-right: 1px solid #626366;
@@ -250,12 +249,12 @@
   }
   .services h3{
     color: var(--main-color);
-    font-size: 48px;
+    font-size: 4.8rem;
     margin: 40px 0;  }
   .services p{
       width: 80%;
       color: var(--white);
-      font-size: 20px;
+      font-size: 2rem;
   }
   .service-content > div {
     position: relative;
@@ -274,7 +273,7 @@
       width: 300px;
   }
   .service-content .service-text-content h4{
-    font-size: 22px;
+    font-size: 2.2rem;
     color: var(--second-color);
   }
 .service-content .service-text-content ul{
@@ -282,12 +281,12 @@
 }
 .service-content .service-text-content li{
     color: var(--white);
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-top: -10px;
 }
 .service-content .service-text-content li::before{
     content: "-";
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #4A4A49;
     font-weight: bold;
     display: inline-block;
@@ -305,7 +304,7 @@
 }
 .our-goals .goals h3{
     color: var(--second-color);
-    font-size: 44px;
+    font-size: 4.4rem;
     font-weight: 800;
     margin-top: 50px;
 }
@@ -316,14 +315,14 @@
 }
 .our-goals .goals .goal p{
     color: var(--white);
-    font-size: 18px;
+    font-size: 1.8rem;
     border-right: 4px solid var(--white);
     width: 65%;
     padding-right: 15px;
 }
 .our-goals .goals .goal span{
     color: var(--white);
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: 10px;
 }
 .our-goals .goals-image-content img{
@@ -352,7 +351,7 @@
 .success-partners .success-partners-title h3{
     text-align: center;
     color: var(--main-color);
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 700;
 }
 .success-partners .partners-logos{
@@ -397,16 +396,16 @@
 }
 .contact-us .form-content h3{
     font-weight: 700;
-    font-size: 28px;
+    font-size: 2.8rem;
     color: var(--main-color);
 }
 .contact-us .form-content p{
     color: var(--white);
-    font-size: 22px;
+    font-size: 2.2rem;
     margin-bottom: 20px;
 }
 .contact-us .form-content form label{
-    font-size: 18px;
+    font-size: 1.8rem;
     display: block;
     color: var(--main-color);
     padding: 15px 0;
@@ -425,7 +424,7 @@
     width: 250px;
     background: var(--main-color);
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .contact-us .contact-image-content img{
     width: 100%;
@@ -444,19 +443,19 @@
 }
 .contact-info .contact-info-text-content h3{
     color: var(--main-color);
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 800;
 }
 .contact-info .contact-info-text-content .contact-p{
     margin: 20px 0;
     font-weight: 700;
     color: var(--white);
-    font-size: 22px;
+    font-size: 2.2rem;
     width: 70%;
 }
 .contact-info .contact-info-text-content span{
     color: var(--white);
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 .contact-info .contact-info-text-content .info{
     display: flex;
@@ -470,11 +469,11 @@
 .contact-info .contact-info-text-content .info div i{
     color: var(--white);
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 .contact-info .contact-info-text-content .info div p{
     color: var(--white);
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 800;
     width: 65%;
 }
@@ -496,7 +495,7 @@ footer .logo img{
 }
 footer .social-media-links p{
     color: var(--white);
-    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: 700;
 
 }
@@ -505,14 +504,14 @@ footer .social-media-links .social-media i {
     margin-top: 10px;
     background-color: var(--white);
     color: var(--main-color);
-    font-size: 12px;
+    font-size: 1.2rem;
     padding: 6px;
     border-radius: 50%;
 }
 footer .footer-contact-info h5 ,
 footer .footer-address h5,
 footer .rights h5{
-    font-size: 14px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: var(--white);
 }
@@ -520,11 +519,16 @@ footer .footer-contact-info .footer-emails{
     margin: 10px 0;
     color: var(--white);
 }
+footer .footer-contact-info .footer-emails p,
+footer .footer-contact-info .footer-fax-tel p{
+    font-size: 1.4rem;
+}
 footer .footer-contact-info .footer-fax-tel{
     color: var(--white);
 }
 footer .footer-address p{
     color: var(--white);
+    font-size: 1.4rem;
 }
 footer .second-footer{
     margin-top: 60px;
@@ -537,7 +541,7 @@ footer .second-footer .text{
 }
 footer .second-footer .text a{
     color: var(--white);
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 footer .second-footer .logo{
     display: flex;
