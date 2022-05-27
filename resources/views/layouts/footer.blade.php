@@ -9,8 +9,7 @@
             </div>
             <div class="col-md-3 social-media-links">
                 <p>
-                    ﻦﻴﺴﺤﺗ ﻰﻠﻋ صﺮﺣ ﻞﻜﺑ ﻞﻤﻌﺗ ﺔـــــــــــــــــﻳدﻮﻌﺳ ﺔﻛﺮﺷ
-                    ﻰﻫﺎﻀـــــُت ﺎﻟ لﻮﻠﺣ ﻢــــــــــــــــﻳﺪﻘﺗ ﻖﻳﺮﻃ ﻦﻋ ةﺎﻴﺤﻟاةدﻮﺟ
+                    {{__('index.aboutCompany')}}
                 </p>
                 <div class="social-media">
                     {{-- <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -20,7 +19,7 @@
                 </div>
             </div>
             <div class="col-md-2 footer-contact-info">
-                <h5>معلومات التواصل</h5>
+                <h5>{{__('index.contactInfo')}}</h5>
                 <div class="footer-emails">
 
                     <p>{{ $data['email_1'] }}</p>
@@ -36,7 +35,7 @@
                 </div>
             </div>
             <div class="col-md-2 footer-address">
-                <h5>عنوان شركة تيديكس</h5>
+                <h5>{{__('index.address')}}</h5>
                 <p>
                 <p>{{ $data['location_' . $lang] }}</p>
 
@@ -53,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text">
-                    <a href="#">إحدى شركات مجموعة اوج المحدودة</a>
+                    <a href="#">{{__('index.group')}}</a>
 
                 </div>
                 <div class="col-md-6 logo">

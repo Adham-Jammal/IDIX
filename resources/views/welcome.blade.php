@@ -129,7 +129,7 @@ $index = 1;
                             <li data-cont=".pest-control">خدمات مكافحة الحشرات</li> --}}
                         </ul>
                         <div>
-                            <h3>خدماتنا</h3>
+                            <h3>{{__('index.ourServices')}}</h3>
                             <p>{{ $data['service_des_' . $lang] }}
                             </p>
                         </div>
@@ -259,19 +259,19 @@ $index = 1;
                     @csrf
                         <div class="input-field">
                             <label for="name">{{__('index.fullname')}}</label>
-                            <input requierd type="text" name="full-name" id="full_name">
+                            <input required type="text" name="full-name" id="full_name">
                         </div>
                         <div class="input-field">
                             <label for="email"> {{__('index.email')}}</label>
-                            <input requierd type="email" name="email" id="email">
+                            <input required type="email" name="email" id="email">
                         </div>
                         <div class="input-field">
                             <label for="phone">{{__('index.phonenumber')}}</label>
-                            <input requierd type="number" name="phone-number" id="phone_number">
+                            <input required type="number" name="phone-number" id="phone_number">
                         </div>
                         <div class="input-field">
                             <label for="service">{{__('index.service')}}</label>
-                            <select requierd id="service_id" name="service">
+                            <select required id="service_id" name="service">
                             <option></option>
                                 @foreach ($services as $service)
                                     <option  value="{{ $service['id'] }}">{{ $service['title_' . $lang] }}</option>
@@ -281,7 +281,7 @@ $index = 1;
                         </div>
                         <div class="input-field">
                             <label for="message">{{__('index.message')}}</label>
-                            <textarea requierd name="message" id="message" cols="30" rows="7"></textarea>
+                            <textarea required name="message" id="message" cols="30" rows="7"></textarea>
                         </div>
                         <div class="input-field">
                             <input type="submit" value="{{__('index.send')}}">

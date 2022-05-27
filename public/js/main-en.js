@@ -20,9 +20,15 @@ $('#owl-carousel').owlCarousel({
     loop: true,
     margin: 30,
     dots: false,
-    navText : ["<div class='hero-next-slide'>  التالي  <i class='fa fa-arrow-right'></i></div>","<i></i>"],
+    navText : ["<div class='hero-next-slide'>  Next  <i class='fa fa-arrow-right'></i></div>","<i></i>"],
     nav: true,
     rtl: false,
     items: 1,
 })
 
+let preloader = select("#preloader");
+if (preloader) {
+  window.addEventListener("load", () => {
+    preloader.remove();
+  });
+}
