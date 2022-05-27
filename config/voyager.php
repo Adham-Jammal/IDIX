@@ -104,13 +104,13 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'ar',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
-            'en',
+            'ar',
             //'pt',
         ],
     ],
@@ -183,13 +183,13 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#4a4a49',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [
-        //'css/custom.css',
+        "css/dashboard.css"
     ],
 
     'additional_js' => [

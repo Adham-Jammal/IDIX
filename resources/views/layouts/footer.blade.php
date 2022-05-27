@@ -1,9 +1,11 @@
 {{-- footer --}}
+
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-2 logo">
-                <img src="{{asset('img/logo.png')}}" alt="">
+                <img src="{{ Voyager::image($data->logo) }}" alt="logo">
+
             </div>
             <div class="col-md-3 social-media-links">
                 <p>
@@ -11,29 +13,33 @@
                     ﻰﻫﺎﻀـــــُت ﺎﻟ لﻮﻠﺣ ﻢــــــــــــــــﻳﺪﻘﺗ ﻖﻳﺮﻃ ﻦﻋ ةﺎﻴﺤﻟاةدﻮﺟ
                 </p>
                 <div class="social-media">
+                    {{-- <i class="fa fa-envelope" aria-hidden="true"></i>
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> --}}
                 </div>
             </div>
             <div class="col-md-2 footer-contact-info">
                 <h5>معلومات التواصل</h5>
                 <div class="footer-emails">
-                    <p>email@email.com</p>
-                    <p>email@email.com</p>
+
+                    <p>{{ $data['email_1'] }}</p>
+                    <p>{{ $data['email_2'] }}</p>
+
+
+
                 </div>
                 <div class="footer-fax-tel">
-                    <p>email@email.com</p>
-                    <p>email@email.com</p>
-                    <p>email@email.com</p>
+                    <p>{{ $data['phone_1'] }}</p>
+                    <p>{{ $data['phone_2'] }}</p>
+
                 </div>
             </div>
             <div class="col-md-2 footer-address">
                 <h5>عنوان شركة تيديكس</h5>
                 <p>
-                    لمملكة العربية السعودية – حي المحمدية
-                    ص.ب 230409  الرياض 11321
+                <p>{{ $data['location_' . $lang] }}</p>
+
                 </p>
 
             </div>
@@ -51,7 +57,8 @@
 
                 </div>
                 <div class="col-md-6 logo">
-                    <img src="{{asset('img/logo.png')}}" alt="">
+                    <img src="{{ Voyager::image($data->logo) }}" alt="logo">
+
                 </div>
             </div>
         </div>
