@@ -187,12 +187,12 @@
     color: var(--white);
 }
 .our-message .message-text h2{
-    text-align: right;
+    text-align: left;
     font-size: 2.6rem;
 }
 .our-message .message-text p{
     font-size: 3rem;
-    text-align: right;
+    text-align: left;
 }
 .quotation-mark {
     display: flex;

@@ -34,9 +34,9 @@ $index = 1;
                 </div>
                 <div class="header-list">
                     <ul>
-                        <li><a href="#hero">الرئيسية</a></li>
-                        <li><a href="#contact_us">اتصل بنا</a></li>
-                        <li><a href="/en">English</a></li>
+                        <li><a href="#hero">{{__('index.main')}}</a></li>
+                        <li><a href="#contact_us">{{__('index.contactUs')}}</a></li>
+                        <li><a href="/en">{{__('index.lang')}}</a></li>
                     </ul>
                 </div>
             </header>
@@ -75,7 +75,7 @@ $index = 1;
                     </div>
 
                     <div class="col-md-6 vision-text-content">
-                        <h3>#رؤيـتـنـا</h3>
+                        <h3>{{__('index.vision')}}</h3>
                         <p>
                             {{ $data['royaa_desc_' . $lang] }}
                         </p>
@@ -96,7 +96,7 @@ $index = 1;
                         <img src="{{ asset('img/quotation-mark.png') }}" alt="">
                     </div>
                     <div class="message-text">
-                        <h2>#رسـالـتـنا</h2>
+                        <h2>{{__('index.ourMessage')}}</h2>
                         <p>
                             {{ $data['message_des_' . $lang] }}
 
@@ -182,7 +182,7 @@ $index = 1;
 
 
                     </div>
-                    <h3>#أهدافنا</h3>
+                    <h3>{{__('index.ourGoals')}}</h3>
 
                 </div>
                 <div class="col-12 col-lg-4 goals-image-content">
@@ -202,7 +202,7 @@ $index = 1;
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 success-partners-title">
-                    <h3>شركاء النجاح</h3>
+                    <h3>{{__('index.partners')}}</h3>
                 </div>
                 <span class="partners-logos-design"></span>
                 <div class="col-12 col-lg-6 partners-logos">
@@ -253,24 +253,24 @@ $index = 1;
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 form-content">
-                    <h3>لا زال لديك استفسارات؟</h3>
-                    <p>املئ النموذج</p>
+                    <h3>{{__('index.question')}}</h3>
+                    <p>{{__('index.fill')}}</p>
                     <form action="contact" method="POST">
                     @csrf
                         <div class="input-field">
-                            <label for="name">الاسم الكامل</label>
+                            <label for="name">{{__('index.fullname')}}</label>
                             <input requierd type="text" name="full-name" id="full_name">
                         </div>
                         <div class="input-field">
-                            <label for="email">البريد الالكتروني</label>
+                            <label for="email"> {{__('index.email')}}</label>
                             <input requierd type="email" name="email" id="email">
                         </div>
                         <div class="input-field">
-                            <label for="phone">رقم الهاتف</label>
+                            <label for="phone">{{__('index.phonenumber')}}</label>
                             <input requierd type="number" name="phone-number" id="phone_number">
                         </div>
                         <div class="input-field">
-                            <label for="service">الخدمة</label>
+                            <label for="service">{{__('index.service')}}</label>
                             <select requierd id="service_id" name="service">
                             <option></option>
                                 @foreach ($services as $service)
@@ -280,11 +280,11 @@ $index = 1;
                             </select>
                         </div>
                         <div class="input-field">
-                            <label for="message">الرسالة</label>
+                            <label for="message">{{__('index.message')}}</label>
                             <textarea requierd name="message" id="message" cols="30" rows="7"></textarea>
                         </div>
                         <div class="input-field">
-                            <input type="submit" value="إرسال">
+                            <input type="submit" value="{{__('index.send')}}">
                         </div>
 
                     </form>
@@ -301,12 +301,11 @@ $index = 1;
         <div class="container">
             <div class="row">
                 <div class="col-md-5 contact-info-text-content">
-                    <h3>لنبقى على تواصل</h3>
+                    <h3>{{__('index.stillContact')}}</h3>
                     <p class="contact-p">
-                        نحن منفتحون على أي اقتراحات
-                        أو لمجرد الدردشة
+                        {{__('index.ready')}}
                     </p>
-                    <span>مقرنا ومعلومات التواصل:</span>
+                    <span>{{__('index.headquarters')}}</span>
                     <div class="info">
                         <div class="emails-content">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
