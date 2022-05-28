@@ -36,3 +36,14 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('admin', function () {
     return redirect('../admin/urls');
 })->name('voyager.dashboard');
+
+Route::get('/clear', function() {
+
+   Artisan::call('cache:clear');
+   Artisan::call('config:clear');
+   Artisan::call('config:cache');
+   Artisan::call('view:clear');
+
+   return "Cleared!";
+
+});
