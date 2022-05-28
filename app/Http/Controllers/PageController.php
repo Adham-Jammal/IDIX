@@ -24,11 +24,11 @@ class PageController extends Controller
 
         ]);
             Message::create([
-                "message" => "message" ,
-                "service" => "service" ,
-                "phone"   => "phone" ,
-                "email"   => "email" ,
-                "name"    => "name" ,]
+                "message" => $request["message"] ,
+                "service" => $request["service"] ,
+                "phone"   => $request["phone"] ,
+                "email"   => $request["email" ],
+                "name"    => $request["name"] ,]
             );
 
             return redirect()->back()->with('message', 'done');

@@ -100,7 +100,10 @@ a{
     overflow: hidden;
     background: var(--main-color);
   }
+  .success-partners .partners-logos{
+    height: fit-content !important;
 
+}
   #preloader:before {
     content: "";
     position: fixed;

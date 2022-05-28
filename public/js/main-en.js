@@ -26,9 +26,27 @@ $('#owl-carousel').owlCarousel({
     items: 1,
 })
 
-let preloader = select("#preloader");
+// let preloader = select("#preloader");
+// if (preloader) {
+//   window.addEventListener("load", () => {
+//     preloader.remove();
+//   });
+// }
+
+window.addEventListener("load", () => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  });
+
+  let preloader = document.getElementById("preloader");
 if (preloader) {
   window.addEventListener("load", () => {
     preloader.remove();
   });
 }
+
+
