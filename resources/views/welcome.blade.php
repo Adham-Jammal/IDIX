@@ -124,6 +124,8 @@ $index = 1;
                             @endphp
                             @foreach ($services as $service)
                                 <li class="{{ $first++ == 1 ? 'active' : '' }}" data-cont=".e{{ $service->id }}">
+                                {{ $service['title_' . $lang] }}
+                                </li>
                             @endforeach
                             {{-- <li data-cont=".plumbing-works">أعمال السباكة</li>
                             <li data-cont=".paint-works">أعمال الطلاء</li>
