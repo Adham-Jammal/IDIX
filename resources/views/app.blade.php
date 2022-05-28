@@ -29,10 +29,22 @@
     @yield('main')
 
     @include('layouts.footer')
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script src="{{ asset('js/main-ar.js')}}"></script>
+
+{{-- Success message --}}
+@if(session()->has('message'))
+<script src="{{ asset('js/success-message-ar.js')}}"></script>
+@endif
+
+{{--Error message --}}
+
+@if ($errors->any())
+        <script src="{{ asset('js/error-messag-ar.js')}}"></script>
+@endif
 </body>
 </html>
 

@@ -8,19 +8,13 @@ $index = 1;
 {{-- Success message --}}
 @section('main')
 @if(session()->has('message'))
-           <script>
-        alert('تم الإرسال بنجاح ')
-        </script>
+<script src="{{ asset('js/formerror.js')}}"></script>
 @endif
 
 {{--Error message --}}
 
 @if ($errors->any())
-    <div class="alert alert-danger">
-        <script>
-        alert('تحقق من إدخالك لجميع الحقول !')
-        </script>
-    </div>
+        <script src="{{ asset('js/formerror.js')}}"></script>
 @endif
 
 
@@ -44,7 +38,7 @@ $index = 1;
             {{-- hero start --}}
             <div class="hero" id="hero">
                 <div class="row">
-                    <div class="col-md-6 hero-text-content">
+                    <div class="col-md-6 hero-text-content"  data-aos="fade-up" data-aos-duration="1000">
                         <h2>{{ $data['main_word_header_' . $lang] }}</h2>
                         <h4>{{ $data['title_header_' . $lang] }}</h4>
                         <p>
@@ -54,7 +48,7 @@ $index = 1;
                             <img src="{{ asset('img/circule-word.png') }}" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 hero-image-content owl-carousel owl-theme" id="owl-carousel">
+                    <div class="col-md-6 hero-image-content owl-carousel owl-theme" id="owl-carousel" data-aos="fade-down" data-aos-duration="1000">
 
                         @foreach ($sliders as $slider)
 
@@ -70,11 +64,11 @@ $index = 1;
             <div class="vision" id="vision">
                 <div class="row align-items-center">
 
-                    <div class="col-md-6 vision-image-content">
+                    <div class="col-md-6 vision-image-content" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="{{ Voyager::image($data->image_royaa_message) }}" alt="">
                     </div>
 
-                    <div class="col-md-6 vision-text-content">
+                    <div class="col-md-6 vision-text-content" data-aos="fade-right" data-aos-duration="1000">
                         <h3>{{__('index.vision')}}</h3>
                         <p>
                             {{ $data['royaa_desc_' . $lang] }}
@@ -92,10 +86,10 @@ $index = 1;
             <div class="row">
                 <div class="col-12 message-content">
                     <div class="quotation-mark right-quotation-mark">
-                        <img src="{{ asset('img/quotation-mark.png') }}" alt="">
-                        <img src="{{ asset('img/quotation-mark.png') }}" alt="">
+                        <img src="{{ asset('img/quotation-mark.png') }}" alt=""  data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="{{ asset('img/quotation-mark.png') }}" alt=""  data-aos="zoom-in" data-aos-duration="1000">
                     </div>
-                    <div class="message-text">
+                    <div class="message-text"  data-aos="zoom-out" data-aos-duration="1000">
                         <h2>{{__('index.ourMessage')}}</h2>
                         <p>
                             {{ $data['message_des_' . $lang] }}
@@ -103,8 +97,8 @@ $index = 1;
                         </p>
                     </div>
                     <div class="quotation-mark left-quotation-mark">
-                        <img src="{{ asset('img/quotation-mark.png') }}" alt="">
-                        <img src="{{ asset('img/quotation-mark.png') }}" alt="">
+                        <img src="{{ asset('img/quotation-mark.png') }}" alt=""  data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="{{ asset('img/quotation-mark.png') }}" alt=""  data-aos="zoom-in" data-aos-duration="1000">
                     </div>
                 </div>
             </div>
@@ -116,7 +110,7 @@ $index = 1;
     <section class="our-services">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 services ">
+                <div class="col-md-6 services "  data-aos="fade-up" data-aos-duration="1000">
                     <div class="services">
                         <ul class="tabs">
                             @foreach ($services as $service)
@@ -137,11 +131,11 @@ $index = 1;
                     </div>
 
                 </div>
-                <div class="col-md-6 service-content">
+                <div class="col-md-6 service-content"  data-aos="zoom-in" data-aos-duration="1000">
 
                     @foreach ($services as $service)
                         <div class="e{{ $service->id }}">
-                            <div class="service-text-content">
+                            <div class="service-text-content"  data-aos="zoom-out" data-aos-delay="900" data-aos-duration="800">
                                 <h4>{{ $service['title_' . $lang] }}</h4>
                                 {!! $service['description_' . $lang] !!}
                                 {{-- <ul>
@@ -174,7 +168,7 @@ $index = 1;
                     <div class="row">
 
                         @foreach ($goals as $goal)
-                            <div class="col-md-6 goal">
+                            <div class="col-md-6 goal" data-aos="fade-up" data-aos-duration="1000">
                                 <span class="goal-number">{{ $index++ }}</span>
                                 <p>{{ $goal['goal_' . $lang] }}</p>
                             </div>
@@ -182,10 +176,10 @@ $index = 1;
 
 
                     </div>
-                    <h3>{{__('index.ourGoals')}}</h3>
+                    <h3  data-aos="zoom-out" data-aos-duration="1000">{{__('index.ourGoals')}}</h3>
 
                 </div>
-                <div class="col-12 col-lg-4 goals-image-content">
+                <div class="col-12 col-lg-4 goals-image-content"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ Voyager::image($data->goals_image) }}" alt="">
                 </div>
             </div>
@@ -201,11 +195,11 @@ $index = 1;
     <section class="success-partners">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 success-partners-title">
+                <div class="col-12 col-lg-6 success-partners-title"  data-aos="zoom-in" data-aos-duration="1000">
                     <h3>{{__('index.partners')}}</h3>
                 </div>
                 <span class="partners-logos-design"></span>
-                <div class="col-12 col-lg-6 partners-logos">
+                <div class="col-12 col-lg-6 partners-logos"  data-aos="zoom-in" data-aos-duration="1000">
                     <div class="partners-logos-column column-1">
                         @while ($index < 7)
                             @if (isset($frindes[$index]))
@@ -252,7 +246,7 @@ $index = 1;
     <section class="contact-us" id="contact_us">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 form-content">
+                <div class="col-12 col-lg-6 form-content"  data-aos="fade-up" data-aos-duration="1000">
                     <h3>{{__('index.question')}}</h3>
                     <p>{{__('index.fill')}}</p>
                     <form action="contact" method="POST">
@@ -289,7 +283,7 @@ $index = 1;
 
                     </form>
                 </div>
-                <div class="col-md-6 contact-image-content">
+                <div class="col-md-6 contact-image-content"  data-aos="zoom-out" data-aos-duration="1000">
                     <img src="{{ Voyager::image($data->form_image) }}" alt="">
                 </div>
             </div>
@@ -300,7 +294,7 @@ $index = 1;
     <section class="contact-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 contact-info-text-content">
+                <div class="col-md-5 contact-info-text-content"  data-aos="zoom-in" data-aos-duration="1000">
                     <h3>{{__('index.stillContact')}}</h3>
                     <p class="contact-p">
                         {{__('index.ready')}}
@@ -336,7 +330,7 @@ $index = 1;
 
                 </div>
 
-                <div class="col-md-7 map">
+                <div class="col-md-7 map"  data-aos="zoom-out" data-aos-duration="1000">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4436.563288335262!2d-76.74920380408464!3d39.19409239099808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e1913f4b4fdb%3A0x18a1a674d9c0d7ad!2s7184%20Troy%20Hill%20Dr%2C%20Elkridge%2C%20MD%2021075%2C%20USA!5e0!3m2!1sen!2sro!4v1573996589257!5m2!1sen!2sro"
                         frameborder="0" style="border:0; width:100%" allowfullscreen=""></iframe>

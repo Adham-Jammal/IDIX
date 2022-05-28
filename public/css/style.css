@@ -85,7 +85,9 @@ a{
     }
 
 }
-
+.swal2-html-container{
+    font-size: 2rem !important;
+}
 /* loader */
 
 #preloader {
