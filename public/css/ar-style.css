@@ -326,7 +326,7 @@
     width: 4px;
     height: 100%;
     position:absolute;
-    right: 35px;
+    right: 50px;
     top: 0;
     background-color:var(--white);
     border-radius: var(--border-radius);

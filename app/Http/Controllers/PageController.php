@@ -15,12 +15,13 @@ class PageController extends Controller
     public function contact(Request $request)
     {
 
+
         $request->validate([
             'message' => 'required',
             'service' => 'required',
-            'phone' => 'required',
-            'email' => 'required',
-            'name' => 'required',
+            'phone'   => 'required',
+            'email'   => 'required',
+            'name'    => 'required',
 
         ]);
             Message::create([

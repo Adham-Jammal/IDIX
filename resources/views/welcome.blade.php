@@ -5,17 +5,8 @@ $lang = ucfirst(LaravelLocalization::getCurrentLocale());
 $index = 1;
 @endphp
 
-{{-- Success message --}}
 @section('main')
-    @if (session()->has('message'))
-        <script src="{{ asset('js/formerror.js') }}"></script>
-    @endif
 
-    {{-- Error message --}}
-
-    @if ($errors->any())
-        <script src="{{ asset('js/formerror.js') }}"></script>
-    @endif
 
 
 
@@ -145,6 +136,8 @@ $index = 1;
 
                     @foreach ($services as $service)
                         <div class="e{{ $service->id }}">
+                            @if (isset($service['description_' . $lang]))
+
                             <div class="service-text-content" data-aos="zoom-out" data-aos-delay="900"
                                 data-aos-duration="800">
                                 <h4>{{ $service['title_' . $lang] }}</h4>
@@ -157,6 +150,9 @@ $index = 1;
                                 <li>التمديدات الكهربائية</li>
                             </ul> --}}
                             </div>
+                            @endif
+
+
                             <div class="service-image-content">
                                 <img width="270px" height="225px" src="{{ Voyager::image($service->image) }}"
                                     alt="{{ $service['title_' . $lang] }}">
@@ -180,7 +176,7 @@ $index = 1;
 
                         @foreach ($goals as $goal)
                             <div class="col-md-6 goal" data-aos="fade-up" data-aos-duration="1000">
-                                <span class="goal-number">{{ $index++ }}</span>
+                                <span class="goal-number"> <pre>{{ $index++ <10 ? ' 0'.$index : $index }}</pre></span>
                                 <p>{{ $goal['goal_' . $lang] }}</p>
                             </div>
                         @endforeach
@@ -284,7 +280,7 @@ $index = 1;
                             <select required id="service_id" name="service">
                                 <option></option>
                                 @foreach ($services as $service)
-                                    <option value="{{ $service['title_ar'] }}">{{ $service['title_' . $lang] }}
+                                    <option value="{{ $service['title_Ar'] }}">{{ $service['title_' . $lang] }}
                                     </option>
                                 @endforeach
 

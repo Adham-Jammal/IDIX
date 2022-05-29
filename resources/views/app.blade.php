@@ -38,14 +38,12 @@
 {{-- Success message --}}
 @if(session()->has('message'))
 <script src="{{ asset('js/success-message-'.LaravelLocalization::getCurrentLocale().'.js')}}"></script>
-<script src="{{ asset('js/main-'.LaravelLocalization::getCurrentLocale().'.js')}}"></script>
-
 @endif
 
 {{--Error message --}}
 
 @if ($errors->any())
-        <script src="{{ asset('js/error-messag-'.LaravelLocalization::getCurrentLocale().'.js')}}"></script>
+        <script src="{{ asset('js/error-message-'.LaravelLocalization::getCurrentLocale().'.js')}}"></script>
 @endif
 </body>
 </html>
