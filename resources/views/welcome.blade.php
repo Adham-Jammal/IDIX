@@ -349,7 +349,7 @@ $index = 1;
 
                 <div class="col-md-7 map" data-aos="zoom-out" data-aos-duration="1000">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4436.563288335262!2d-76.74920380408464!3d39.19409239099808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e1913f4b4fdb%3A0x18a1a674d9c0d7ad!2s7184%20Troy%20Hill%20Dr%2C%20Elkridge%2C%20MD%2021075%2C%20USA!5e0!3m2!1sen!2sro!4v1573996589257!5m2!1sen!2sro"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.525097389987!2d46.655882899999995!3d24.7431792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee2a3f0446607%3A0xf26276486ff2996b!2sAwj%20Group%20LLC!5e0!3m2!1sen!2ssa!4v1653805099480!5m2!1sen!2ssa"
                         frameborder="0" style="border:0; width:100%" allowfullscreen=""></iframe>
                 </div>
             </div>
