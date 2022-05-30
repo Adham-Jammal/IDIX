@@ -52,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text">
-                    <a href="#">{{__('index.group')}}</a>
+                    <a href="#">{{__('index.group')}} <i class="bi bi-box-arrow-up-left"></i> </a>
 
                 </div>
                 <div class="col-md-6 logo">
