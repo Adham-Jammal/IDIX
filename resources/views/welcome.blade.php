@@ -336,6 +336,7 @@ $index = 1;
                             <div class="phone-numbers">
                                 <p>{{ $data['phone_1'] }}</p>
                                 <p>{{ $data['phone_2'] }}</p>
+                                <p>{{ $data['phone_3'] }}</p>
 
                             </div>
                         </div>
