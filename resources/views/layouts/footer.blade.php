@@ -12,10 +12,11 @@
                     {{__('index.aboutCompany')}}
                 </p>
                 <div class="social-media">
-                    {{-- <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i> --}}
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="col-md-2 footer-contact-info">
