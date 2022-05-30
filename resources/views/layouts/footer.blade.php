@@ -22,8 +22,8 @@
                 <h5>{{__('index.contactInfo')}}</h5>
                 <div class="footer-emails">
 
-                    <p>{{ $data['email_1'] }}</p>
-                    <p>{{ $data['email_2'] }}</p>
+                    <p>{{ $data['mail_1'] }}</p>
+                    <p>{{ $data['mail_2'] }}</p>
 
 
 
@@ -31,6 +31,7 @@
                 <div class="footer-fax-tel">
                     <p>{{ $data['phone_1'] }}</p>
                     <p>{{ $data['phone_3'] }}</p>
+                    <p>{{ $data['phone_2'] }}</p>
 
                 </div>
             </div>
