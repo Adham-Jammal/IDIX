@@ -335,8 +335,9 @@ $index = 1;
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <div class="phone-numbers">
                                 <p>{{ $data['phone_1'] }}</p>
-                                <p>{{ $data['phone_2'] }}</p>
                                 <p>{{ $data['phone3'] }}</p>
+                                <p>{{ $data['phone_2'] }}</p>
+
 
                             </div>
                         </div>
