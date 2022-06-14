@@ -542,7 +542,7 @@ footer .footer-contact-info .footer-fax-tel{
 }
 footer .footer-address p{
     color: var(--white);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 footer .second-footer{
     margin-top: 60px;
@@ -554,8 +554,15 @@ footer .second-footer .text{
     justify-content: flex-start;
 }
 footer .second-footer .text a{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
     color: var(--white);
     font-size: 1.8rem;
+    font-weight: 600;
+}
+footer .second-footer .text a i{
+    margin-right: 10px;
 }
 footer .second-footer .logo{
     display: flex;
@@ -563,6 +570,7 @@ footer .second-footer .logo{
 }
 footer .second-footer .logo img{
     width: 150px;
+    margin-left: 50px;
 }
 #chat_with_us{
     position: fixed;
@@ -961,6 +969,14 @@ footer .second-footer .logo img{
     }
     .success-partners .success-partners-title h3{
         margin-bottom: 20px;
+    }
+    footer .footer-contact-info .footer-emails p, footer .footer-contact-info .footer-fax-tel p,
+    footer .footer-contact-info h5, footer .footer-address h5, footer .rights h5,
+    footer .footer-address p{
+        font-size: 1.8rem;
+    }
+    .second-footer .row{
+        flex-direction: column-reverse;
     }
     }
 

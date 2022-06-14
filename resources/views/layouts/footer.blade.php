@@ -54,7 +54,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text">
-                    <a href="#">{{__('index.group')}} <i class="bi bi-box-arrow-up-left"></i> </a>
+                    <a href="#">{{__('index.group')}} <i class="bi bi-box-arrow-up-right"></i> </a>
 
                 </div>
                 <div class="col-md-6 logo">
