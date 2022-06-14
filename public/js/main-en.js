@@ -20,7 +20,7 @@ $('#owl-carousel').owlCarousel({
     loop: true,
     margin: 30,
     dots: false,
-    navText : ["<div class='hero-next-slide'> <i class='bi bi-caret-right-fill'></i> Next  </div>","<i></i>"],
+    navText : ["<div class='hero-next-slide'> <i class='fas fa-fast-forward'></i> Next  </div>","<i></i>"],
     nav: true,
     rtl: false,
     items: 1,

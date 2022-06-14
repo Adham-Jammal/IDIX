@@ -518,7 +518,7 @@ footer .social-media-links .social-media i {
 footer .footer-contact-info h5 ,
 footer .footer-address h5,
 footer .rights h5{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--white);
 }
@@ -542,17 +542,25 @@ footer .second-footer{
     background-color: var(--second-color);
     padding: 25px;
 }
+footer .second-footer .row{
+    flex-direction: row-reverse;
+}
 footer .second-footer .text{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 footer .second-footer .text a{
     color: var(--white);
     font-size: 1.8rem;
+    display: flex;
+    flex-direction: row-reverse;
 }
 footer .second-footer .logo{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+}
+footer .second-footer .logo img{
+    width: 150px;
 }
 #chat_with_us{
     position: fixed;
@@ -569,9 +577,23 @@ footer .second-footer .logo{
     font-size: 2rem;
     font-weight: 800;
 }
-#chat_with_us:hover{
-    background-color: var(--dark-color);
+#chat_with_us span{
+    display: none;
+    position: absolute;
+    background: var(--main-color);
+    font-size: 1.5rem;
+    width: 175px;
+    right: 0;
+    border-radius: 8px;
+    bottom: 55px;
+    padding: 6px 0;
+    transition: .5;
 }
+#chat_with_us:hover > span{
+    display: block;
+    transition: .5;
+}
+
 
 /* Responsive */
 @media (max-width:1200px){
