@@ -9,7 +9,7 @@ return [
     'ourMessage' => '#Our Message',
     'ourGoals' => '#Our Goals',
     'ourServices' => 'Our Services',
-    'partners' => 'success partners',
+    'partners' => 'Success Partners',
     'question' => 'Still have a questions?',
     'fill' => 'Fill out the form',
     'fullname' => 'Full Name',

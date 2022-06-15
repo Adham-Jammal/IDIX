@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 logo">
-                <img src="{{ Voyager::image($data->logo) }}" alt="logo">
+                <img src="{{ asset('img/white-logo.png') }}" alt="">
 
             </div>
             <div class="col-md-3 social-media-links">

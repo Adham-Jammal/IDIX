@@ -5,6 +5,10 @@
     src: url("../fonts/DIN\ Next\ LT\ Arabic\ Medium.ttf");
     src: url("../fonts/DIN\ Next\ LT\ Arabic\ Regular.ttf");
   }
+  @font-face {
+    font-family: footer-font;
+    src: url("../fonts/HelveticaNeueLT\ Arabic\ 55\ Roman.ttf");
+  }
 *{
     direction: rtl;
     font-family: 'Arabic-font', sans-serif;
