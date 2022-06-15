@@ -9,3 +9,7 @@
     direction: rtl;
     font-family: 'Arabic-font', sans-serif;
 }
+
+.ps__rail-y{
+    display: none !important;
+}
