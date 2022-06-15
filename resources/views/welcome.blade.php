@@ -176,7 +176,7 @@ $index = 1;
 
                         @foreach ($goals as $goal)
                             <div class="col-md-6 goal" data-aos="fade-up" data-aos-duration="1000">
-                                <span class="goal-number"> <pre>{{ $index++ <10 ? ' 0'.$index : $index }}</pre></span>
+                                <span class="goal-number"> <pre>{{ $index <10 ? ' 0'.$index++ : $index++ }}</pre></span>
                                 <p>{{ $goal['goal_' . $lang] }}</p>
                             </div>
                         @endforeach
