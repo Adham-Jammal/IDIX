@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="preloader"></div>
-    <button id="chat_with_us"><i class="fas fa-comment-alt"></i></button>
+    <button id="chat_with_us" onclick="window.location.href='https://api.whatsapp.com/send?phone=966539398820'"><i class="fas fa-comment-alt"></i> <span>{{ __('index.whatsapp') }}</span></button>
 
     @include('layouts.header')
 

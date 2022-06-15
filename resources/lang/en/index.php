@@ -24,7 +24,8 @@ return [
     'aboutCompany' => 'A Saudi company that works diligently to improve the quality of life by providing unparalleled solutions.',
     'contactInfo' => 'Contact Info',
     'address' => 'TDIX Address',
-    'group' => 'One of the companies of the Oj Group Ltd.',
+    'group' => 'إحدى شركات مجموعة اوج المحدودة',
+    'whatsapp' => ' Do you have any questions? Contact us on WhatsApp',
 
 
 

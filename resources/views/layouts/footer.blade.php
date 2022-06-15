@@ -12,11 +12,11 @@
                     {{__('index.aboutCompany')}}
                 </p>
                 <div class="social-media">
-                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:{{ $data['mail_1'] }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/awjgroupllc/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/awjgroup-llc/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/awjgroup"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="col-md-2 footer-contact-info">
@@ -52,13 +52,13 @@
     </div>
     <div class="second-footer">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-6 text">
-                    <a href="#">{{__('index.group')}} <i class="bi bi-box-arrow-up-left"></i> </a>
+                    <a href="https://awj.com.sa/">{{__('index.group')}} <i class="bi bi-box-arrow-up-right"></i> </a>
 
                 </div>
                 <div class="col-md-6 logo">
-                    <img src="{{ Voyager::image($data->logo) }}" alt="logo">
+                    <img src="{{ asset('img/footer-logo.png') }}" alt="awj-logo">
 
                 </div>
             </div>
