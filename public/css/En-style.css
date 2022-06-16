@@ -555,9 +555,11 @@ footer .second-footer .text{
 }
 footer .second-footer .text a{
     color: var(--white);
+    font-family: 'footer-font';
     font-size: 1.8rem;
     display: flex;
     flex-direction: row-reverse;
+    align-items: baseline;
 }
 footer .second-footer .text a i{
     margin-right: 10px;
