@@ -288,7 +288,7 @@ $index = 1;
                         </div>
                         <div class="input-field">
                             <label for="message">{{ __('index.message') }}</label>
-                            <textarea required name="message" id="message" cols="30" rows="7"></textarea>
+                            <textarea maxlength='1000' required name="message" id="message" cols="30" rows="7"></textarea>
                         </div>
                         <div class="input-field">
                             <input type="submit" value="{{ __('index.send') }}">
