@@ -509,7 +509,7 @@ footer .logo{
     justify-content: center;
 }
 footer .logo img{
-    width: 75px;
+    width: 140px;
 }
 footer .social-media-links p{
     color: var(--white);
@@ -575,6 +575,9 @@ footer .second-footer .logo{
 footer .second-footer .logo img{
     width: 150px;
     margin-left: 50px;
+}
+footer .rights h5{
+    text-align: left;
 }
 #chat_with_us{
     position: fixed;

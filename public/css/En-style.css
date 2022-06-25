@@ -485,7 +485,7 @@
 .contact-info .contact-info-text-content .info div p{
     color: var(--white);
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 500;
     width: 65%;
 }
 .contact-info .contact-info-text-content .info .phone-numbers p{
@@ -502,12 +502,12 @@ footer .logo{
     justify-content: center;
 }
 footer .logo img{
-    width: 75px;
+    width: 140px;
 }
 footer .social-media-links p{
     color: var(--white);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
 
 }
 footer .social-media-links .social-media i {
@@ -523,7 +523,7 @@ footer .footer-contact-info h5 ,
 footer .footer-address h5,
 footer .rights h5{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--white);
 }
 footer .footer-contact-info .footer-emails{
@@ -975,6 +975,7 @@ footer .second-footer .logo img{
     footer .footer-contact-info .footer-emails p, footer .footer-contact-info .footer-fax-tel p,
     footer .footer-contact-info h5, footer .footer-address h5, footer .rights h5,
     footer .footer-address p{
+        font-weight: 500;
        font-size: 1.8rem;
     }
     .second-footer .row{
